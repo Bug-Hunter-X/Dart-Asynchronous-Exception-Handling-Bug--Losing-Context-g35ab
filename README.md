@@ -1,0 +1,3 @@
+# Dart Asynchronous Exception Handling Bug
+
+This repository demonstrates a common error in Dart asynchronous programming: losing context when re-throwing exceptions. The `fetchData` function simulates an API call that might throw an exception. The `catch` block catches the exception but re-throws it without adding any context making debugging the original issue problematic. The solution shows how to properly handle and re-throw exceptions with better logging for more informative error messages.
